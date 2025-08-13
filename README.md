@@ -6,7 +6,8 @@ Tecnicatura Universitaria en Programación
 ✨ Estudiante
 
 Nombre: Sosa, Luciano Emanuel
-Comisión: M2025-13 [Modificar con su comisión, donde 7 es el número de comisión]
+
+Comisión: M2025-13
 
 📂 Descripción del Repositorio
 Este repositorio almacena todas los trabajos prácticos realizados durante la cursada de Programación 1.
