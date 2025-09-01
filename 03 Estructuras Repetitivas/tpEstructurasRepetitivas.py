@@ -56,3 +56,19 @@ print(f"¡Felicidades! Adivinaste el número {numRandom} en {intentos} intentos.
 
 ## Ejercicio 6
 
+for i in range (100, -1, -2):
+    print(i)
+
+
+## Ejercicio 7
+
+num = int(input("Ingrese un número entero positivo: "))
+suma = 0
+
+# Suma todos los números desde 0 hasta el número ingresado.
+for i in range(0, num + 1):
+    suma += i
+print(f"La suma de los números enteros positivos hasta {num} es: {suma}")
+
+## Ejercicio 8
+
