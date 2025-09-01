@@ -30,3 +30,29 @@ print(f"La suma de los números entre {menor} y {mayor} es: {suma}")
 
 ## Ejercicio 4
 
+# Pide números al usuario y suma hasta que ingrese 0
+
+num = int(input("Ingrese un número: "))
+suma = 0
+
+## Determino la suma de los números ingresados.
+while num != 0:
+    suma += num
+    num = int(input("Ingrese un número: "))
+print(f"La suma de los números ingresados es: {suma}")
+
+## Ejercicio 5
+
+import random
+num = int(input("Adivine el número entre 0 y 9: "))
+numRandom = random.randint(0, 9)
+intentos = 1
+
+## Bucle para adivinar el numero
+while num != numRandom:
+    intentos += 1
+    num = int(input("Adivine el número entre 0 y 9: "))
+print(f"¡Felicidades! Adivinaste el número {numRandom} en {intentos} intentos.")
+
+## Ejercicio 6
+
