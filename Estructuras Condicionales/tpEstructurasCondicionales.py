@@ -48,3 +48,34 @@ print("Mediana:", median(numeros_aleatorios))
 print("Media:", mean(numeros_aleatorios))
 
 ## Ejercicio 7
+frase = input("Ingrese una frase o palabra: ")
+if frase[-1].lower() in "aeiou":
+    frase += "!"
+print(frase)
+
+## Ejercicio 8
+nombre = input("Ingrese su nombre: ")
+num = int(input("Ingrese el numero 1, 2 o 3: "))
+if num == 1:
+    print(nombre.upper())
+elif num == 2:
+    print(nombre.lower())
+elif num == 3:
+    print(nombre.title())
+    
+## Ejercicio 9
+magnitud = int(input("Ingrese la magnitud del terremoto: "))
+if magnitud < 3:
+    print("Muy leve")
+elif magnitud >= 3 and magnitud < 4:
+    print("Leve")
+elif magnitud >= 4 and magnitud < 5:
+    print("Moderado")
+elif magnitud >= 5 and magnitud < 6:
+    print("Fuerte")
+elif magnitud >= 6 and magnitud < 7:
+    print("Muy fuerte")
+elif magnitud >= 7:
+    print("Extremo")
+
+## Ejercicio 10
