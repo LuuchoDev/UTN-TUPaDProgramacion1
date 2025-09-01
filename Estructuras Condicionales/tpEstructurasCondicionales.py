@@ -32,3 +32,19 @@ elif (edad >= 30):
     print("Eres un adulto.")
 
 ## Ejercicio 5
+contraseña = input("Introduce la contraseña entre 8 y 14 caracteres: ")
+if len(contraseña) < 8 or len(contraseña) > 14:
+    print("La contraseña debe tener entre 8 y 14 caracteres.")
+else:
+    print("Contraseña válida.")
+
+## Ejercicio 6
+import random
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+from statistics import mode, median, mean
+print("Modo:", mode(numeros_aleatorios))
+print("Mediana:", median(numeros_aleatorios))
+print("Media:", mean(numeros_aleatorios))
+
+## Ejercicio 7
