@@ -1,24 +1,23 @@
-hemisferio = input("Ingrese el hemisferio en el que se encuentra (N/S): ").upper()
-mes = int(input("Ingrese el mes: "))
-dia = int(input("Ingrese el día: "))
+## Ejercicio 6
+import random
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
 
-if hemisferio == "N":
-    if (mes == 12 and dia >= 21) or (mes in [1, 2]) or (mes == 3 and dia <= 20):
-        print("Es invierno.")
-    elif (mes == 3 and dia >= 21) or (mes in [4, 5]) or (mes == 6 and dia <= 20):
-        print("Es primavera.")
-    elif (mes == 6 and dia >= 21) or (mes in [7, 8]) or (mes == 9 and dia <= 20):
-        print("Es verano.")
-    elif (mes == 9 and dia >= 21) or (mes in [10, 11]) or (mes == 12 and dia <= 20):
-        print("Es otoño.")
-elif hemisferio == "S":
-    if (mes == 6 and dia >= 21) or (mes in [7, 8]) or (mes == 9 and dia <= 20):
-        print("Es invierno.")
-    elif (mes == 9 and dia >= 21) or (mes in [10, 11]) or (mes == 12 and dia <= 20):
-        print("Es primavera.")
-    elif (mes == 12 and dia >= 21) or (mes in [1, 2]) or (mes == 3 and dia <= 20):
-        print("Es verano.")
-    elif (mes == 3 and dia >= 21) or (mes in [4, 5]) or (mes == 6 and dia <= 20):
-        print("Es otoño.")
+from statistics import mode, median, mean
+
+moda = mode(numeros_aleatorios)
+mediana = median(numeros_aleatorios)
+media = mean(numeros_aleatorios)
+
+print("Modo:", moda)
+print("Mediana:", mediana)
+print("Media:", media)
+
+# Determina el tipo de sesgo
+if media > mediana and mediana > moda:
+    print("Sesgo positivo o a la derecha.")
+elif media < mediana and mediana < moda:
+    print("Sesgo negativo o a la izquierda.")
+elif media == mediana == moda:
+    print("Sin sesgo: media, mediana y moda son iguales.")
 else:
-    print("Ingrese un hemisferio válido.")
+    print("No hay un sesgo claro.")
