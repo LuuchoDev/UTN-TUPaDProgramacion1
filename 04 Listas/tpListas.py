@@ -47,3 +47,27 @@ else:
         print(f"- {p}")
         
 ## Ejercicio 3
+
+import random
+numerosRandom = []
+## Genera 15 números aleatorios entre 1 y 100
+for i in range(15):
+    numerosRandom.append(random.randint(1, 100))
+
+## Crea una lista con los numeros pares y otra con los impares
+numerosPares = []
+numerosImpares = []
+
+for num in numerosRandom:
+    if num % 2 == 0:
+        numerosPares.append(num)
+    else:
+        numerosImpares.append(num)
+
+## Muestra la lista de pares e impares
+print(f"Números generados: {numerosRandom}")
+print(f"Números pares: {numerosPares} (cantidad: {len(numerosPares)})")
+print(f"Números impares: {numerosImpares} (cantidad: {len(numerosImpares)})")
+
+## Ejercicio 4
+
