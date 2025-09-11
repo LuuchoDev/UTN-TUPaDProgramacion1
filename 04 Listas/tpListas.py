@@ -109,3 +109,12 @@ elif Agregar_O_Eliminar in 'eE':
 print(f"La lista actualizada es: {alumnos}")
 
 ## Ejercicio 6
+
+numeros = [1, 2, 3, 4, 5, 6, 7]
+## Muestra la lista original
+print(f"Lista original: {numeros}")
+## Rota la lista a la derecha una vez
+numeros = [numeros[-1]] + numeros[:-1]
+print(f"Lista rotada: {numeros}")
+
+## Ejercicio 7
