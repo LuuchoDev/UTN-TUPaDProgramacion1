@@ -33,20 +33,7 @@ while jugadas < 9:
     tablero[fila][columna] = jugador
     jugadas += 1
 
-    # Verifica si hay un ganador
-    for i in range(3):
-        if tablero[i][0] == tablero[i][1] == tablero[i][2] != "-":
-            print(f"¡El jugador '{jugador}' ha ganado!")
-            jugadas = 9 # Termina el juego
-        if tablero[0][i] == tablero[1][i] == tablero[2][i] != "-":
-            print(f"¡El jugador '{jugador}' ha ganado!")
-            jugadas = 9 # Termina el juego
-    if tablero[0][0] == tablero[1][1] == tablero[2][2] != "-":
-        print(f"¡El jugador '{jugador}' ha ganado!")
-        jugadas = 9 # Termina el juego
-    if tablero[0][2] == tablero[1][1] == tablero[2][0] != "-":
-        print(f"¡El jugador '{jugador}' ha ganado!")
-        jugadas = 9 # Termina el juego
+    
 
     # Cambia de jugador
     jugador = "o" if jugador == "x" else "x"
