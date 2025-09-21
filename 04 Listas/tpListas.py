@@ -1,7 +1,10 @@
-## Ejercicio 1
+# ==========================================
+#               EJERCICIO 1
+# ==========================================
+
 notas = [10, 8, 7, 6, 10, 4, 8, 7, 6, 5]
 print(f"Notas de los estudiantes: {notas}")
-
+    
 ## Calcular y mostrar el promedio de las notas
 promedio = sum(notas) / len(notas)
 print(f"Promedio de las notas: {promedio}")
@@ -10,7 +13,9 @@ print(f"Promedio de las notas: {promedio}")
 print(f"La nota mas alta es: {max(notas)}")
 print(f"La nota mas baja es: {min(notas)}")
 
-## Ejercicio 2
+# ==========================================
+#               EJERCICIO 2
+# ==========================================
 
 ## Crea una lista vacía para almacenar productos
 productos = []
@@ -46,7 +51,9 @@ else:
     for p in productos:
         print(f"- {p}")
         
-## Ejercicio 3
+# ==========================================
+#               EJERCICIO 3
+# ==========================================
 
 import random
 numerosRandom = []
@@ -69,7 +76,9 @@ print(f"Números generados: {numerosRandom}")
 print(f"Números pares: {numerosPares} (cantidad: {len(numerosPares)})")
 print(f"Números impares: {numerosImpares} (cantidad: {len(numerosImpares)})")
 
-## Ejercicio 4
+# ==========================================
+#               EJERCICIO 4
+# ==========================================
 
 datos = [1, 3, 5, 3, 7, 1, 9, 5, 3]
 datos_sin_repetidos = []
@@ -83,7 +92,9 @@ for num in datos:
 
 print(datos_sin_repetidos)
 
-## Ejercicio 5
+# ==========================================
+#               EJERCICIO 5
+# ==========================================
 
 ## Lista de alumnos
 alumnos = ["Ana", "Luis", "Carlos", "Marta", "Lucía", "Jorge", "Sofía", "Diego"]
@@ -108,7 +119,9 @@ elif Agregar_O_Eliminar in 'eE':
 
 print(f"La lista actualizada es: {alumnos}")
 
-## Ejercicio 6
+# ==========================================
+#               EJERCICIO 6
+# ==========================================
 
 numeros = [1, 2, 3, 4, 5, 6, 7]
 ## Muestra la lista original
@@ -117,7 +130,9 @@ print(f"Lista original: {numeros}")
 numeros = [numeros[-1]] + numeros[:-1]
 print(f"Lista rotada: {numeros}")
 
-## Ejercicio 7
+# ==========================================
+#               EJERCICIO 7
+# ==========================================
 
 temperaturas = [
     [10, 20],
@@ -137,7 +152,9 @@ promedio_maximas = sum(maximas) / len(maximas)
 print(f'Promedio de temperaturas mínimas: {promedio_minimas}')
 print(f'Promedio de temperaturas máximas: {promedio_maximas}')
 
-## Ejercicio 8
+# ==========================================
+#               EJERCICIO 8
+# ==========================================
 
 notas = [
     [8, 7, 9],   # Estudiante 1
@@ -160,7 +177,9 @@ for j in range(3):
     promedio = suma / len(notas)
     print(f"El promedio de la materia {j+1} es: {promedio:.2f}.")
     
-## Ejercicio 9
+# ==========================================
+#               EJERCICIO 9
+# ==========================================
 
 # Inicializa el tablero 3x3 con guiones
 tablero = []
@@ -206,5 +225,7 @@ while jugadas < 9:
             print(celda, end=" ")
         print()
 
-## Ejercicio 10
+# ==========================================
+#               EJERCICIO 10
+# ==========================================
 
