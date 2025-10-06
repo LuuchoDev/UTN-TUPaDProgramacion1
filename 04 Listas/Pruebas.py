@@ -1,45 +1,42 @@
-# Inicializa el tablero 3x3 con guiones
-tablero = []
-for i in range(3):
-    fila = []
-    for j in range(3):
-        fila.append("-")
-    tablero.append(fila)
 
-## Muestra el tablero inicial
-for fila in tablero:
-    for celda in fila:
-        print(celda, end=" ")
-    print()
-    
-## Variables para controlar el juego
-jugador = "x"
-jugadas = 0
+## Ejercicio 10:
 
-while jugadas < 9:
-    print(f"\nTurno del jugador '{jugador}'")
-    fila = int(input(f"Jugador '{jugador}', ingrese la fila (0-2): "))
-    columna = int(input(f"Jugador '{jugador}', ingrese la columna (0-2): "))
-    
-    if fila < 0 or fila > 2 or columna < 0 or columna > 2:
-        print("Coordenadas inválidas. Intente de nuevo.")
-        continue # Salta a la siguiente iteración del bucle
-    
-    if tablero[fila][columna] != "-":
-        print("La celda ya está ocupada. Intente de nuevo.")
-        continue # Salta a la siguiente iteración del bucle
 
-    # Realiza la jugada
-    tablero[fila][columna] = jugador
-    jugadas += 1
+ventas = [
+    [100, 250, 3100, 4200],
+    [60, 35, 120, 600],
+    [5, 15, 45, 10],
+    [1100, 300, 400, 500],
+    [8, 5, 2, 60],
+    [20, 10, 5, 8],
+    [200, 180, 350, 700]
+] 
+productos_nombre = ['Cuaderno', 'Termo', 'Mate', 'Lapiz']
 
-    
+ventas_producto_por_dia = [[], [], [], []]
 
-    # Cambia de jugador
-    jugador = "o" if jugador == "x" else "x"
+for dia in ventas:
+    for i, producto in enumerate(dia):
+        ventas_producto_por_dia[i].append(producto)
 
-    # Muestra el tablero
-    for fila in tablero:
-        for celda in fila:
-            print(celda, end=" ")
-        print()
+print('Total vendido por cada producto:')
+for i, ventas_producto in enumerate(ventas_producto_por_dia):
+    print(f'\t{productos_nombre[i]}: {sum(ventas_producto)}')
+
+
+mayor_ventas_dia = [None, None] 
+for i, dia in enumerate(ventas):
+    total_ventas = sum(dia)
+    if mayor_ventas_dia[1] == None or mayor_ventas_dia[1] < total_ventas:
+        mayor_ventas_dia = [i, total_ventas]
+
+print(f'\nDía con mayores ventas totales: {mayor_ventas_dia[0] + 1} (con {mayor_ventas_dia[1]})')
+
+
+mayor_ventas_producto = [None, None] 
+for i, producto in enumerate(ventas_producto_por_dia):
+    total_ventas = sum(producto)
+    if mayor_ventas_producto[1] == None or mayor_ventas_producto[1] < total_ventas:
+        mayor_ventas_producto = [i, total_ventas]
+
+print(f'\nProducto más vendido en la semana: {productos_nombre[mayor_ventas_producto[0]]} (con {mayor_ventas_producto[1]})')
