@@ -99,3 +99,17 @@ def calcular_imc(peso, altura):
 peso = float(input("Ingrese su peso: "))
 altura = float(input("Ingrese su altura: "))
 print(f"su indice de masa corporal es: {calcular_imc(peso, altura),}")
+
+# ==========================================
+#               EJERCICIO 9
+# ==========================================
+def celsius_a_fahrenheit(celsius):
+    ## Convierte grados Celsius a Fahrenheit.
+    fahrenheit = (celsius * 9/5) + 32
+    return fahrenheit
+celsius = float(input("Ingrese la temperatura en Celsius: "))
+print(f"La temperatura en Fahrenheit es: {celsius_a_fahrenheit(celsius)}")
+
+## ==========================================
+##               EJERCICIO 10
+## ==========================================
