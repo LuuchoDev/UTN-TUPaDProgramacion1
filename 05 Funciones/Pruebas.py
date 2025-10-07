@@ -1,7 +1,12 @@
+def operaciones_basicas(a, b):
+    ## Realiza las operaciones básicas entre dos números y devuelve los resultados.
+    suma = a + b
+    resta = a - b
+    multiplicacion = a * b
+    division = a / b
+    return (suma, resta, multiplicacion, division)
 
-def tabla_multiplicar(numero):
-    ## Imprime la tabla de multiplicar del número dado
-    for i in range(1, 11):
-        print(f"{numero} x {i} = {numero * i}")
-num = int(input("Ingrese un número para ver su tabla de multiplicar: "))
-tabla_multiplicar(num)
+num1 = int(input("Ingrese el primer número: "))
+num2 = int(input("Ingrese el segundo número: "))
+resultados = operaciones_basicas(num1, num2)
+print(f"Suma: {resultados[0]}\nResta: {resultados[1]}\nMultiplicación: {resultados[2]}\nDivisión: {resultados[3]}")
