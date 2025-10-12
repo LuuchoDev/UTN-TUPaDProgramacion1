@@ -105,3 +105,16 @@ for alumno, notas in alumnos.items():
 #               EJERCICIO 7
 # ==========================================
 
+parcial_1 = {8, 9, 2, 4, 5}
+parcial_2 = {6, 8, 7, 3, 4}
+
+ambos_aprobados = parcial_1 & parcial_2
+print("Alumnos que aprobaron ambos parciales:", ambos_aprobados)
+solo_uno_aprobado = parcial_1 ^ parcial_2
+print("Alumnos que aprobaron solo uno de los parciales:", solo_uno_aprobado)
+todos_aprobados = parcial_1 | parcial_2
+print("Alumnos que aprobaron al menos uno de los parciales:", todos_aprobados)
+
+# ==========================================
+#               EJERCICIO 8
+# ==========================================
