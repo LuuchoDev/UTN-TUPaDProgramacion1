@@ -65,3 +65,24 @@ else:
 # ==========================================
 #               EJERCICIO 5
 # ==========================================
+frase = input("Ingrese una frase: ")
+palabras = frase.lower().split()
+
+## Crear un conjunto para almacenar palabras únicas
+palabras_unicas = set(palabras)
+print("Palabras únicas en la frase:")
+print(palabras_unicas)
+
+## Cuenta las palabras y la guarda en un diccionario
+contador = {}
+for palabra in palabras:
+    if palabra in contador:
+        contador[palabra] += 1
+    else:
+        contador[palabra] = 1
+print("Contador de palabras:")
+print(contador)
+
+# ==========================================
+#               EJERCICIO 6
+# ==========================================
