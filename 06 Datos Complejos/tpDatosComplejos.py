@@ -86,3 +86,22 @@ print(contador)
 # ==========================================
 #               EJERCICIO 6
 # ==========================================
+alumnos = {}
+for i in range(3):
+    nombre = input(f"Ingrese el nombre del alumno {i+1}:")
+    nota_temporal = []
+    for j in range (3):
+        nota = float(input(f"Ingrese la nota {j+1} de {nombre}: "))
+        nota_temporal.append(nota)
+    alumnos[nombre] = tuple(nota_temporal)
+    print(f"Notas de {nombre} guardada.")
+
+print("\nPromedios de los alumnos:")
+for alumno, notas in alumnos.items():
+    promedio = sum(notas) / len(notas)
+    print(f"El promedio de {alumno} es: {promedio}")
+    
+# ==========================================
+#               EJERCICIO 7
+# ==========================================
+
