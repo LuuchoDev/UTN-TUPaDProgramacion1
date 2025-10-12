@@ -1,6 +1,7 @@
 # ==========================================
 #               EJERCICIO 1
 # ==========================================
+
 precios_frutas = {'Banana': 1200, 'Ananá': 2500, 'Melón': 3000, 'Uva': 1450}
 ## Agrega nuevas frutas y sus precios
 precios_frutas['Naranja'] = 1200
@@ -11,6 +12,7 @@ print(precios_frutas)
 # ==========================================
 #               EJERCICIO 2
 # ==========================================
+
 precios_frutas = {'Banana': 1200, 'Ananá': 2500, 'Melón': 3000, 'Uva': 1450}
 ## Agrega nuevas frutas y sus precios
 precios_frutas['Naranja'] = 1200
@@ -45,6 +47,7 @@ print(lista_frutas)
 # ==========================================
 #               EJERCICIO 4
 # ==========================================
+
 contactos = {}
 for i in range(5):
     nombre = input("Ingrese el nombre del contacto: ")
@@ -65,6 +68,7 @@ else:
 # ==========================================
 #               EJERCICIO 5
 # ==========================================
+
 frase = input("Ingrese una frase: ")
 palabras = frase.lower().split()
 
@@ -86,6 +90,7 @@ print(contador)
 # ==========================================
 #               EJERCICIO 6
 # ==========================================
+
 alumnos = {}
 for i in range(3):
     nombre = input(f"Ingrese el nombre del alumno {i+1}:")
