@@ -1,11 +1,9 @@
-original = {
-    "Argentina": "Buenos Aires",
-    "Brasil": "Brasilia",
-    "Chile": "Santiago",
-    "Colombia": "Bogotá",
-    "Uruguay": "Montevideo"
+agenda = {
+    ("lunes", "10:00"): "Reunión",
+    ("martes", "15:00"): "Clase de inglés"
 }
-invertido = {}
-for pais, capital in original.items():
-    invertido[capital] = pais
-print(invertido)
+
+dia = input('Ingrese el dia: ')
+hora = input('Ingrese la hora: ')
+evento = agenda.get((dia, hora), 'No hay evento en ese dia y hora')
+print(evento)
