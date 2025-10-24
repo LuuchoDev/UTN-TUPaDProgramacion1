@@ -169,31 +169,25 @@ while True:
 #               EJERCICIO 9
 # ==========================================
 
-dia = ("lunes", "martes", "miércoles", "jueves", "viernes", "sábado", "domingo")
-
 agenda = {
-    ("lunes", "10:00"): "Reunión equipo",
-    ("martes", "15:00"): "Clase de inglés",
-    ("viernes", "09:30"): "Entrega informe"
+    ("lunes", "10:00"): "Reunión",
+    ("martes", "15:00"): "Clase de inglés"
 }
 
-def consultar_agenda(dia,hora):
-    clave = (dia, hora)
-    if clave in agenda:
-        return f"Actividad programada: {agenda[clave]}"
-    else:
-        return "No hay actividad programada en ese día y hora."
-
-print (f"Días disponibles: {dia}")
-dia = input("Ingrese un día de la semana: ").strip()
-hora = input("Ingrese una hora (ej: 10:00): ").strip()
-
-evento = consultar_agenda(dia, hora)
-if evento: 
-    print(f"En {dia} a las {hora}: {evento}")
-else:
-    print("No hay actividad programada en ese día y hora.")
+dia = input('Ingrese el dia: ')
+hora = input('Ingrese la hora: ')
+evento = agenda.get((dia, hora), 'No hay evento en ese dia y hora')
+print(evento)
 
 # ==========================================
 #               EJERCICIO 10
 # ==========================================
+
+original = {
+    "Argentina": "Buenos Aires",
+    "Brasil": "Brasilia",
+}
+invertido = {}
+for pais, capital in original.items():
+    invertido[capital] = pais
+print(invertido)
