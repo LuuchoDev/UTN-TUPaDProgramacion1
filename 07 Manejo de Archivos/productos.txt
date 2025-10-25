@@ -1,0 +1,4 @@
+Manzana, 2500, 8
+Naranja, 2000, 10
+Frutilla, 3000, 20
+Fibron,800,30
